@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="intel.config.composerxe.exe.debug.1556241299">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="intel.config.composerxe.exe.debug.1556241299" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ICCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.photran.core.intel.IntelCompilerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.ICCErrorParser;org.eclipse.photran.core.intel.IntelCompilerErrorParser" id="intel.config.composerxe.exe.debug.1556241299" name="Debug" parent="intel.config.composerxe.exe.debug">
+					<folderInfo id="intel.config.composerxe.exe.debug.1556241299." name="/" resourcePath="">
+						<toolChain errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.toolchain.composerxe.exe.debug.1238915335" name="Intel C++ Compiler" nonInternalBuilderId="intel.builder.composerxe.makebuilder" superClass="intel.toolchain.composerxe.exe.debug">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="intel.platform.composerxe.base.1506252452" isAbstract="false" name="intel.platform.base" superClass="intel.platform.composerxe.base"/>
+							<builder buildPath="${workspace_loc:/pipe}/Debug" enableAutoBuild="false" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="intel.builder.composerxe.makebuilder.467874347" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="intel.builder.composerxe.makebuilder"/>
+							<tool id="intel.tool.archiver.composerxe.base.1333369968" name="Intel Archiver" superClass="intel.tool.archiver.composerxe.base"/>
+							<tool errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.tool.cpp.linker.composerxe.base.732937001" name="Intel C++ Linker" superClass="intel.tool.cpp.linker.composerxe.base">
+								<option id="intel.linkstep.perflibs.daal.1765055251" name="Use Intel(R) Data Analytics Acceleration Library" superClass="intel.linkstep.perflibs.daal" useByScannerDiscovery="false" value="perflibs.mkl.none" valueType="enumerated"/>
+								<option id="intel.linkstep.general.optimization2.2120217212" name="Optimization Level" superClass="intel.linkstep.general.optimization2" useByScannerDiscovery="false" value="general.opt.none" valueType="enumerated"/>
+								<option id="intel.linkstep.libname.1750813995" name="Additional Libraries (-l)" superClass="intel.linkstep.libname" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" value="petsc"/>
+									<listOptionValue builtIn="false" value="ifport"/>
+									<listOptionValue builtIn="false" value="ifcore"/>
+									<listOptionValue builtIn="false" value="imf"/>
+								</option>
+								<option id="intel.linkstep.libpath.133876549" name="Search Directory for Libraries (-L)" superClass="intel.linkstep.libpath" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/lib&quot;"/>
+								</option>
+								<option id="intel.linkstep.loptions.1209165914" name="Additional Options" superClass="intel.linkstep.loptions" useByScannerDiscovery="false" value="-Wl,-rpath,&quot;${PETSC_DIR}/${PETSC_ARCH}/lib&quot;" valueType="string"/>
+								<inputType id="intel.linkstep.input.1238298959" superClass="intel.linkstep.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="intel.tool.c.linker.composerxe.base.1852131679" name="Intel C Linker" superClass="intel.tool.c.linker.composerxe.base"/>
+							<tool errorParsers="org.eclipse.photran.core.intel.IntelCompilerErrorParser" id="photran.managedbuild.tool.intel.fortran.compiler.x86_64.base.1868176195" name="Intel(R) Intel(R) 64 Fortran Compiler" superClass="photran.managedbuild.tool.intel.fortran.compiler.x86_64.base">
+								<option defaultValue="true" id="intel.linux.fortran.compiler.general.debug.1492733765" name="Include Debug Information (-g)" superClass="intel.linux.fortran.compiler.general.debug" useByScannerDiscovery="false" valueType="boolean"/>
+								<option defaultValue="general.opt.none" id="intel.linux.fortran.compiler.general.optimization.1318070984" name="Optimization Level" superClass="intel.linux.fortran.compiler.general.optimization" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="intel.linux.fortran.compiler.cmdline.addlopts.158742114" name="Additional Options" superClass="intel.linux.fortran.compiler.cmdline.addlopts" useByScannerDiscovery="false" value="-c -nofor_main -check arg_temp_created -cpp" valueType="string"/>
+								<option id="intel.linux.fortran.compiler.preprocessor.includedirectories.826019136" name="Additional Include Directories (-I)" superClass="intel.linux.fortran.compiler.preprocessor.includedirectories" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include/petsc/mpiuni&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/include&quot;"/>
+								</option>
+								<inputType id="photran.managedbuild.tool.intel.fortran.compiler.input.666660484" superClass="photran.managedbuild.tool.intel.fortran.compiler.input"/>
+							</tool>
+							<tool errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.tool.cpp.compiler.composerxe.base.738332940" name="Intel C++ Compiler" superClass="intel.tool.cpp.compiler.composerxe.base">
+								<option defaultValue="true" id="intel.compilestep.general.debug.1926259281" name="Include Debug Information (-g)" superClass="intel.compilestep.general.debug" valueType="boolean"/>
+								<option defaultValue="general.opt.none" id="intel.compilestep.general.optimization2.180771140" name="Optimization Level" superClass="intel.compilestep.general.optimization2" valueType="enumerated"/>
+								<option id="intel.compilestep.coptions.2012650635" name="Additional Options" superClass="intel.compilestep.coptions" useByScannerDiscovery="false" value="-std=c++17" valueType="string"/>
+								<option id="intel.compilestep.preprocessor.includedirectories.2048402011" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/soprano/work/eigen/"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include/petsc/mpiuni&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/include&quot;"/>
+								</option>
+								<inputType id="intel.cpp.compilestep.input.244285789" name="C Sources" superClass="intel.cpp.compilestep.input"/>
+							</tool>
+							<tool errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.tool.c.compiler.composerxe.base.1049226192" name="Intel C Compiler" superClass="intel.tool.c.compiler.composerxe.base">
+								<option defaultValue="true" id="intel.compilestep.general.debug.83202214" name="Include Debug Information (-g)" superClass="intel.compilestep.general.debug" valueType="boolean"/>
+								<option defaultValue="general.opt.none" id="intel.compilestep.general.optimization2.1493898608" name="Optimization Level" superClass="intel.compilestep.general.optimization2" valueType="enumerated"/>
+								<inputType id="intel.c.compilestep.input.1222242165" name="C Sources" superClass="intel.c.compilestep.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="intel.config.composerxe.exe.release.47145574">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="intel.config.composerxe.exe.release.47145574" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ICCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.photran.core.intel.IntelCompilerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.ICCErrorParser;org.eclipse.photran.core.intel.IntelCompilerErrorParser" id="intel.config.composerxe.exe.release.47145574" name="Release" parent="intel.config.composerxe.exe.release">
+					<folderInfo id="intel.config.composerxe.exe.release.47145574." name="/" resourcePath="">
+						<toolChain errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.toolchain.composerxe.exe.release.232259969" name="Intel C++ Compiler" superClass="intel.toolchain.composerxe.exe.release">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="intel.platform.composerxe.base.789709192" isAbstract="false" name="intel.platform.base" superClass="intel.platform.composerxe.base"/>
+							<builder buildPath="${workspace_loc:/pipe}/Release" enableAutoBuild="true" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="intel.builder.composerxe.makebuilder.267430906" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="intel.builder.composerxe.makebuilder"/>
+							<tool id="intel.tool.archiver.composerxe.base.1280012973" name="Intel Archiver" superClass="intel.tool.archiver.composerxe.base"/>
+							<tool errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.tool.cpp.linker.composerxe.base.1382163643" name="Intel C++ Linker" superClass="intel.tool.cpp.linker.composerxe.base">
+								<option id="intel.linkstep.perflibs.daal.1194195343" name="Use Intel(R) Data Analytics Acceleration Library" superClass="intel.linkstep.perflibs.daal" useByScannerDiscovery="false" value="perflibs.mkl.none" valueType="enumerated"/>
+								<option id="intel.linkstep.libname.1439336115" name="Additional Libraries (-l)" superClass="intel.linkstep.libname" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" value="petsc"/>
+									<listOptionValue builtIn="false" value="ifport"/>
+									<listOptionValue builtIn="false" value="ifcore"/>
+									<listOptionValue builtIn="false" value="imf"/>
+								</option>
+								<option id="intel.linkstep.libpath.1892598714" name="Search Directory for Libraries (-L)" superClass="intel.linkstep.libpath" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/lib&quot;"/>
+								</option>
+								<option id="intel.linkstep.loptions.20024595" name="Additional Options" superClass="intel.linkstep.loptions" useByScannerDiscovery="false" value="-Wl,-rpath,&quot;${PETSC_DIR}/${PETSC_ARCH}/lib&quot;" valueType="string"/>
+								<inputType id="intel.linkstep.input.556775848" superClass="intel.linkstep.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="intel.tool.c.linker.composerxe.base.2009410801" name="Intel C Linker" superClass="intel.tool.c.linker.composerxe.base"/>
+							<tool errorParsers="org.eclipse.photran.core.intel.IntelCompilerErrorParser" id="photran.managedbuild.tool.intel.fortran.compiler.x86_64.base.1554187975" name="Intel(R) Intel(R) 64 Fortran Compiler" superClass="photran.managedbuild.tool.intel.fortran.compiler.x86_64.base">
+								<option defaultValue="false" id="intel.linux.fortran.compiler.general.debug.1152755229" name="Include Debug Information (-g)" superClass="intel.linux.fortran.compiler.general.debug" useByScannerDiscovery="false" valueType="boolean"/>
+								<option defaultValue="general.opt.speed" id="intel.linux.fortran.compiler.general.optimization.321914120" name="Optimization Level" superClass="intel.linux.fortran.compiler.general.optimization" useByScannerDiscovery="false" value="general.opt.speedHLO" valueType="enumerated"/>
+								<option id="intel.linux.fortran.compiler.preprocessor.includedirectories.1889034960" name="Additional Include Directories (-I)" superClass="intel.linux.fortran.compiler.preprocessor.includedirectories" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include/petsc/mpiuni&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/include&quot;"/>
+								</option>
+								<option id="intel.linux.fortran.compiler.cmdline.addlopts.1750218357" name="Additional Options" superClass="intel.linux.fortran.compiler.cmdline.addlopts" useByScannerDiscovery="false" value="-c -nofor_main -check arg_temp_created -cpp" valueType="string"/>
+								<inputType id="photran.managedbuild.tool.intel.fortran.compiler.input.964718967" superClass="photran.managedbuild.tool.intel.fortran.compiler.input"/>
+							</tool>
+							<tool errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.tool.cpp.compiler.composerxe.base.1620585531" name="Intel C++ Compiler" superClass="intel.tool.cpp.compiler.composerxe.base">
+								<option defaultValue="false" id="intel.compilestep.general.debug.915404202" name="Include Debug Information (-g)" superClass="intel.compilestep.general.debug" useByScannerDiscovery="false" valueType="boolean"/>
+								<option defaultValue="general.opt.speed" id="intel.compilestep.general.optimization2.297104138" name="Optimization Level" superClass="intel.compilestep.general.optimization2" useByScannerDiscovery="false" value="general.opt.speedHLO" valueType="enumerated"/>
+								<option id="intel.compilestep.preprocessor.includedirectories.241707978" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/soprano/work/eigen/"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include/petsc/mpiuni&quot;"/>
+								</option>
+								<option id="intel.compilestep.coptions.1627294276" name="Additional Options" superClass="intel.compilestep.coptions" useByScannerDiscovery="false" value="-std=c++17" valueType="string"/>
+								<inputType id="intel.cpp.compilestep.input.228554252" name="C Sources" superClass="intel.cpp.compilestep.input"/>
+							</tool>
+							<tool errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.tool.c.compiler.composerxe.base.1829287010" name="Intel C Compiler" superClass="intel.tool.c.compiler.composerxe.base">
+								<option defaultValue="false" id="intel.compilestep.general.debug.1100736007" name="Include Debug Information (-g)" superClass="intel.compilestep.general.debug" useByScannerDiscovery="false" valueType="boolean"/>
+								<option defaultValue="general.opt.speed" id="intel.compilestep.general.optimization2.1280464231" name="Optimization Level" superClass="intel.compilestep.general.optimization2" useByScannerDiscovery="false" value="general.opt.speedHLO" valueType="enumerated"/>
+								<inputType id="intel.c.compilestep.input.2122014709" name="C Sources" superClass="intel.c.compilestep.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="pipe.intel.target.composerxe.exe.1109518373" name="Executable" projectType="intel.target.composerxe.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/pipe"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/pipe"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>
