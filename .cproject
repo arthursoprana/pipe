@@ -28,9 +28,14 @@
 									<listOptionValue builtIn="false" value="ifport"/>
 									<listOptionValue builtIn="false" value="ifcore"/>
 									<listOptionValue builtIn="false" value="imf"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+									<listOptionValue builtIn="false" value="gtest"/>
+									<listOptionValue builtIn="false" value="gmock"/>
 								</option>
 								<option id="intel.linkstep.libpath.133876549" name="Search Directory for Libraries (-L)" superClass="intel.linkstep.libpath" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/lib&quot;"/>
+									<listOptionValue builtIn="false" value="/home/soprano/work/googletest/mybuild/googlemock/"/>
+									<listOptionValue builtIn="false" value="/home/soprano/work/googletest/mybuild/googlemock/gtest"/>
 								</option>
 								<option id="intel.linkstep.loptions.1209165914" name="Additional Options" superClass="intel.linkstep.loptions" useByScannerDiscovery="false" value="-Wl,-rpath,&quot;${PETSC_DIR}/${PETSC_ARCH}/lib&quot;" valueType="string"/>
 								<inputType id="intel.linkstep.input.1238298959" superClass="intel.linkstep.input">
@@ -59,6 +64,8 @@
 									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include/petsc/mpiuni&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/include&quot;"/>
+									<listOptionValue builtIn="false" value="/home/soprano/work/googletest/googletest/include"/>
+									<listOptionValue builtIn="false" value="/home/soprano/work/googletest/googlemock/include"/>
 								</option>
 								<inputType id="intel.cpp.compilestep.input.244285789" name="C Sources" superClass="intel.cpp.compilestep.input"/>
 							</tool>
@@ -99,11 +106,17 @@
 									<listOptionValue builtIn="false" value="ifport"/>
 									<listOptionValue builtIn="false" value="ifcore"/>
 									<listOptionValue builtIn="false" value="imf"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+									<listOptionValue builtIn="false" value="gtest"/>
+									<listOptionValue builtIn="false" value="gmock"/>
 								</option>
 								<option id="intel.linkstep.libpath.1892598714" name="Search Directory for Libraries (-L)" superClass="intel.linkstep.libpath" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/lib&quot;"/>
+									<listOptionValue builtIn="false" value="/home/soprano/work/googletest/mybuild/googlemock/"/>
+									<listOptionValue builtIn="false" value="/home/soprano/work/googletest/mybuild/googlemock/gtest"/>
 								</option>
 								<option id="intel.linkstep.loptions.20024595" name="Additional Options" superClass="intel.linkstep.loptions" useByScannerDiscovery="false" value="-Wl,-rpath,&quot;${PETSC_DIR}/${PETSC_ARCH}/lib&quot;" valueType="string"/>
+								<option id="intel.linkstep.general.optimization2.1160609447" name="Optimization Level" superClass="intel.linkstep.general.optimization2" useByScannerDiscovery="false" value="general.opt.speedHLO" valueType="enumerated"/>
 								<inputType id="intel.linkstep.input.556775848" superClass="intel.linkstep.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -118,7 +131,7 @@
 									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include/petsc/mpiuni&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/include&quot;"/>
 								</option>
-								<option id="intel.linux.fortran.compiler.cmdline.addlopts.1750218357" name="Additional Options" superClass="intel.linux.fortran.compiler.cmdline.addlopts" useByScannerDiscovery="false" value="-c -nofor_main -check arg_temp_created -cpp" valueType="string"/>
+								<option id="intel.linux.fortran.compiler.cmdline.addlopts.1750218357" name="Additional Options" superClass="intel.linux.fortran.compiler.cmdline.addlopts" useByScannerDiscovery="false" value="-c -nofor_main -check arg_temp_created -cpp -xcore-avx-i" valueType="string"/>
 								<inputType id="photran.managedbuild.tool.intel.fortran.compiler.input.964718967" superClass="photran.managedbuild.tool.intel.fortran.compiler.input"/>
 							</tool>
 							<tool errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.tool.cpp.compiler.composerxe.base.1620585531" name="Intel C++ Compiler" superClass="intel.tool.cpp.compiler.composerxe.base">
@@ -126,11 +139,14 @@
 								<option defaultValue="general.opt.speed" id="intel.compilestep.general.optimization2.297104138" name="Optimization Level" superClass="intel.compilestep.general.optimization2" useByScannerDiscovery="false" value="general.opt.speedHLO" valueType="enumerated"/>
 								<option id="intel.compilestep.preprocessor.includedirectories.241707978" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/soprano/work/eigen/"/>
-									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/include/petsc/mpiuni&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PETSC_DIR}/${PETSC_ARCH}/include&quot;"/>
+									<listOptionValue builtIn="false" value="/home/soprano/work/googletest/googletest/include"/>
+									<listOptionValue builtIn="false" value="/home/soprano/work/googletest/googlemock/include"/>
 								</option>
-								<option id="intel.compilestep.coptions.1627294276" name="Additional Options" superClass="intel.compilestep.coptions" useByScannerDiscovery="false" value="-std=c++17" valueType="string"/>
+								<option id="intel.compilestep.coptions.1627294276" name="Additional Options" superClass="intel.compilestep.coptions" useByScannerDiscovery="false" value="-std=c++17 -xcore-avx-i" valueType="string"/>
+								<option id="intel.compilestep.cg.reqintelextensions.18.2092069972" name="Intel(R) Processor-Specific Optimization" superClass="intel.compilestep.cg.reqintelextensions.18" useByScannerDiscovery="false" value="intel.cg.reqnone" valueType="enumerated"/>
 								<inputType id="intel.cpp.compilestep.input.228554252" name="C Sources" superClass="intel.cpp.compilestep.input"/>
 							</tool>
 							<tool errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.ICCErrorParser" id="intel.tool.c.compiler.composerxe.base.1829287010" name="Intel C Compiler" superClass="intel.tool.c.compiler.composerxe.base">
@@ -148,9 +164,6 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="pipe.intel.target.composerxe.exe.1109518373" name="Executable" projectType="intel.target.composerxe.exe"/>
 	</storageModule>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Debug">
@@ -162,4 +175,13 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="intel.config.composerxe.exe.debug.1556241299;intel.config.composerxe.exe.debug.1556241299.;intel.tool.c.compiler.composerxe.base.1049226192;intel.c.compilestep.input.1222242165">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.intel.compiler.cdt.managedbuilder.core.ICCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="intel.config.composerxe.exe.debug.1556241299;intel.config.composerxe.exe.debug.1556241299.;intel.tool.cpp.compiler.composerxe.base.738332940;intel.cpp.compilestep.input.244285789">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.intel.compiler.cdt.managedbuilder.core.ICCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
 </cproject>

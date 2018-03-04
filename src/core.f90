@@ -52,14 +52,52 @@ subroutine ApplicationFunctionFortran(lambda,mx,my,x,f,ierr)
 !        end do
 !    end do
 
+!    do j = 1, my
+!        do i = 1, mx
+!            if (i .eq. 1 .or. j .eq. 1 .or. i .eq. mx .or. j .eq. my) then
+!                f(i,j) = x(i,j)
+!            endif
+!        end do
+!    end do
     f(1, :) = x(1, :)
     f(mx,:) = x(mx,:)
     f(:, 1) = x(:, 1)
     f(:,my) = x(:,my)
-
     f(2:mx-1,2:my-1) = hydhx * (2.0 * x(2:mx-1,2:my-1) - x(1:mx-2,2:my-1) - x(3:mx,2:my-1)) &
                      + hxdhy * (2.0 * x(2:mx-1,2:my-1) - x(2:mx-1,1:my-2) - x(2:mx-1,3:my)) &
                      - sc * exp(x(2:mx-1,2:my-1))
+
+    return
+end
+
+subroutine InitialGuessFortran(mx, my, lambda, x)
+    use petscsnes
+    implicit none
+
+    integer  mx, my
+
+    !  Input/output variables:
+    real*8   x(mx,my), lambda
+
+    !  Local variables:
+    real*8   temp, temp1, hx, hy
+    integer  i,j
+
+    hx     = 1.0 / dble(mx - 1)
+    hy     = 1.0 / dble(my - 1)
+
+    temp1 = lambda / (lambda + 1.0)
+
+    do j = 1, my
+        temp = dble(min(j - 1, my - j) * hy)
+        do i = 1, mx
+            if (i .eq. 1 .or. j .eq. 1 .or. i .eq. mx .or. j .eq. my) then
+                x(i,j) = 0.0
+            else
+                x(i,j) = temp1 * sqrt(min(min(i - 1, mx - i) * hx, temp))
+            endif
+        end do
+    end do
 
     return
 end
